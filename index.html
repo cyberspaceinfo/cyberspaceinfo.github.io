@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     
-    <title>TMT</title>
+    <title>互联网分析观点</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description">
+    <meta name="description" content="分享和启发">
 <meta property="og:type" content="website">
-<meta property="og:title" content="TMT">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="TMT">
-<meta property="og:description">
+<meta property="og:title" content="互联网分析观点">
+<meta property="og:url" content="http://cyberspaceinfo.com/index.html">
+<meta property="og:site_name" content="互联网分析观点">
+<meta property="og:description" content="分享和启发">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TMT">
-<meta name="twitter:description">
+<meta name="twitter:title" content="互联网分析观点">
+<meta name="twitter:description" content="分享和启发">
     
 
     
@@ -51,6 +51,10 @@
                         <a href="/" class="logo"></a>
                     </h1>
                     
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">分享和启发</p>
+                        </h2>
+                    
                 </div>
                 <div id="header-inner" class="nav-container">
                     <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
@@ -58,52 +62,31 @@
                         <ul id="main-nav">
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">Inici</a>
+                                    <a class="main-nav-list-link" href="/">主页</a>
                                 </li>
                             
-                                        
+                                        <ul class="main-nav-list"></ul>
                                     
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about/index.html">Quant a</a>
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
                                 </li>
                             
                         </ul>
                         <nav id="sub-nav">
                             <div id="search-form-wrap">
 
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cercar" />
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..." />
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" placeholder="搜索" />
+</form>
 <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'categories',
-            TAGS: 'etiquetes',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:cyberspaceinfo.com ' + keyword;
+        return false;
+    });
+})(jQuery);
 </script>
-<script src="/js/insight.js"></script>
 
 </div>
                         </nav>
@@ -120,7 +103,7 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="home">Inici</em>
+    <em class="page-title-link" data-url="home">主页</em>
     </h1>
 </div>
                         <div class="main-body-content">
@@ -143,7 +126,7 @@
         <article class="article article-summary">
     <div class="article-summary-inner">
         
-        <a href="/2016/05/06/hello-world/" class="thumbnail">
+        <a href="/2016/05/08/hello-world/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -152,8 +135,6 @@
         
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-url="http://yoursite.com/2016/05/06/hello-world/">0</span>
     
 </span>
 
@@ -164,12 +145,12 @@
             <p class="category">
             
             </p>
-            <p class="date"><time datetime="2016-05-06T09:19:11.824Z" itemprop="datePublished">2016-05-06</time></p>
+            <p class="date"><time datetime="2016-05-08T07:58:16.000Z" itemprop="datePublished">2016-05-08</time></p>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2016/05/06/hello-world/">Hello World</a>
+        <a href="/2016/05/08/hello-world/">Hello World</a>
         </h1>
     
 
@@ -193,8 +174,24 @@ Quick
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
     <div class="sidebar-top">
-        <p>seguir:</p>
+        <p>关注我 :</p>
         <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/cyberspaceinfo" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
             
                 
                 <li>
@@ -222,22 +219,6 @@ Quick
             
                 
                 <li>
-                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
-                        <i class="icon fa fa-github"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
-                        <i class="icon fa fa-weibo"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
                     <a class="social-tooltip" title="rss" href="/" target="_blank">
                         <i class="icon fa fa-rss"></i>
                     </a>
@@ -252,14 +233,14 @@ Quick
             
                 
     <div class="widget-wrap">
-        <h3 class="widget-title">recents</h3>
+        <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2016/05/06/hello-world/" class="thumbnail">
+                            <a href="/2016/05/08/hello-world/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -270,8 +251,8 @@ Quick
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2016/05/06/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2016-05-06T09:19:11.824Z" itemprop="datePublished">2016-05-06</time></p>
+                            <p class="item-title"><a href="/2016/05/08/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2016-05-08T07:58:16.000Z" itemprop="datePublished">2016-05-08</time></p>
                         </div>
                     </li>
                 
@@ -281,27 +262,48 @@ Quick
 
             
                 
-
-            
-                
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">arxius</h3>
+        <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="category-list"></ul>
         </div>
     </div>
 
 
             
                 
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
 
-            
-                
 
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/测试/">测试</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/测试/" style="font-size: 10px;">测试</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
         <div class="widget">
             <ul>
                 
@@ -329,7 +331,7 @@ Quick
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2016 John Doe</p>
+                <p>&copy; 2016 Cyberspaceinfo</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>
@@ -337,18 +339,7 @@ Quick
 </footer>
         
     
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=cyberspaceinfo"></script>
 
 
 
